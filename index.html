@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marc Abel N'Guessan — Étudiant en Ingénierie Informatique. Développement logiciel, web et systèmes embarqués à Abidjan.">
+  <meta property="og:title" content="Marc Abel N'Guessan — Ingénieur Informatique">
+  <meta property="og:description" content="Portfolio — Développement mobile, web et IoT. Abidjan, Côte d'Ivoire.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="theme-color" content="#007AFF">
+  <title>Marc Abel N'Guessan — Ingénieur Informatique</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">M<span class="accent">.</span>A</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <svg class="circuit-svg" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="traceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#007AFF" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#34C759" stop-opacity="0.08"/>
+          </linearGradient>
+        </defs>
+        <path d="M0 400 H200 L220 380 H400 L420 400 H600 L620 380 H800 L820 400 H1000 L1020 420 H1200" stroke="url(#traceGrad)" stroke-width="1.5" fill="none"/>
+        <path d="M100 0 V150 L120 170 V350 L100 370 V550 L120 570 V800" stroke="url(#traceGrad)" stroke-width="1" fill="none"/>
+        <path d="M500 0 V100 L520 120 V280 L500 300 V500 L520 520 V800" stroke="url(#traceGrad)" stroke-width="1" fill="none"/>
+        <path d="M900 0 V200 L920 220 V400 L900 420 V650 L920 670 V800" stroke="url(#traceGrad)" stroke-width="1" fill="none"/>
+        <circle cx="200" cy="400" r="4" fill="#007AFF" opacity="0.4"/>
+        <circle cx="600" cy="400" r="4" fill="#34C759" opacity="0.4"/>
+        <circle cx="1000" cy="420" r="4" fill="#FF9F0A" opacity="0.4"/>
+        <rect x="480" y="340" width="80" height="80" rx="8" stroke="#007AFF" stroke-width="1" fill="none" opacity="0.2"/>
+      </svg>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="container hero-content fade-in">
+      <p class="hero-label">Portfolio · Abidjan, CI</p>
+      <h1 class="hero-title">Marc Abel<br>N'Guessan</h1>
+      <p class="hero-subtitle">Étudiant en Ingénierie Informatique</p>
+      <p class="hero-tagline">
+        Je transforme des problèmes concrets en solutions logicielles —
+        du capteur embarqué à l'application mobile.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-secondary">Me contacter</a>
+      </div>
+    </div>
+    <div class="scroll-indicator" aria-hidden="true"><span></span></div>
+  </section>
+
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">01 — À propos</span>
+        <h2 class="section-title">Code, circuits<br>&amp; résolution de problèmes.</h2>
+      </div>
+      <div class="about-grid fade-in">
+        <div class="about-text">
+          <p>
+            Étudiant en 2<sup>e</sup> année du cycle ingénieur en informatique à
+            <strong>BEM Tech</strong> (Abidjan), je construis des solutions qui
+            connectent le monde physique au numérique.
+          </p>
+          <p>
+            Mon parcours m'a mené du développement web aux systèmes embarqués IoT,
+            en passant par le mobile. Chaque projet est une occasion de comprendre
+            un problème réel et d'y répondre avec rigueur technique.
+          </p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-label">Formation</span>
+              <span class="meta-value">BEM Tech — Cycle Ingénieur Info.</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Localisation</span>
+              <span class="meta-value">Abidjan, Côte d'Ivoire</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="chip-card">
+            <div class="chip-card-inner">
+              <div class="chip-icon">
+                <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                  <rect x="16" y="16" width="32" height="32" rx="4" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="16" y1="24" x2="8" y2="24" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="16" y1="32" x2="8" y2="32" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="16" y1="40" x2="8" y2="40" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="48" y1="24" x2="56" y2="24" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="48" y1="32" x2="56" y2="32" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="48" y1="40" x2="56" y2="40" stroke="currentColor" stroke-width="1.5"/>
+                  <circle cx="32" cy="32" r="6" fill="currentColor" opacity="0.3"/>
+                </svg>
+              </div>
+              <p class="chip-label">Stack actuelle</p>
+              <ul class="chip-tags">
+                <li>React Native</li>
+                <li>Firebase</li>
+                <li>Arduino / IoT</li>
+                <li>Node.js</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">02 — Projets</span>
+        <h2 class="section-title">Des solutions concrètes,<br>pas des démos vides.</h2>
+      </div>
+
+      <article class="project-card fade-in">
+        <div class="project-visual project-visual--blue">
+          <div class="project-mockup">
+            <div class="mockup-screen">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+              </div>
+              <div class="mockup-content mockup-content--map">
+                <div class="map-route"></div>
+                <div class="map-pin map-pin--a"></div>
+                <div class="map-pin map-pin--b"></div>
+                <div class="map-label">WarAide</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-status">En cours</span>
+          <h3 class="project-title">WarAide</h3>
+          <p class="project-tagline">Navigation transport en commun à Abidjan</p>
+          <div class="project-body">
+            <div class="project-block">
+              <h4>Contexte</h4>
+              <p>Les quartiers Riviéra Bonoumin, Riviéra Palmeraie et Angré manquent d'outils numériques adaptés pour planifier leurs déplacements en transport collectif.</p>
+            </div>
+            <div class="project-block">
+              <h4>Problème résolu</h4>
+              <p>Faciliter la consultation d'itinéraires et de stations de transport en temps réel, directement depuis le smartphone.</p>
+            </div>
+            <div class="project-block">
+              <h4>Mon rôle</h4>
+              <p>Conception et développement full-stack de l'application mobile, modélisation de la base de données et intégration Firebase.</p>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span>React Native</span><span>Firebase</span><span>Firestore</span>
+          </div>
+          <div class="project-metrics">
+            <div class="metric"><span class="metric-value">37</span><span class="metric-label">stations</span></div>
+            <div class="metric"><span class="metric-value">4</span><span class="metric-label">itinéraires</span></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card project-card--reverse fade-in">
+        <div class="project-visual project-visual--green">
+          <div class="project-mockup project-mockup--hardware">
+            <div class="hardware-board">
+              <div class="led led--blue"></div>
+              <div class="led led--green active"></div>
+              <div class="led led--red"></div>
+              <div class="sensor-line"></div>
+              <div class="temp-display">32.4°C</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-status project-status--done">Validé</span>
+          <h3 class="project-title">Monitoring Température</h3>
+          <p class="project-tagline">Séchoir à cacao industriel — IoT temps réel</p>
+          <div class="project-body">
+            <div class="project-block">
+              <h4>Contexte</h4>
+              <p>Le séchage du cacao exige un contrôle strict de la température. Un écart peut compromettre la qualité du produit final.</p>
+            </div>
+            <div class="project-block">
+              <h4>Problème résolu</h4>
+              <p>Surveillance continue de la température avec alertes visuelles LED et enregistrement automatique des données vers le cloud.</p>
+            </div>
+            <div class="project-block">
+              <h4>Mon rôle</h4>
+              <p>Conception du système complet : capteurs DS18B20, Arduino Uno, module RTC, transmission WiFi via ESP8266 et synchronisation Google Sheets.</p>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span>Arduino</span><span>ESP8266</span><span>DS18B20</span><span>Google Apps Script</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card fade-in">
+        <div class="project-visual project-visual--orange">
+          <div class="project-mockup">
+            <div class="mockup-screen">
+              <div class="mockup-header">
+                <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+              </div>
+              <div class="mockup-content mockup-content--shop">
+                <div class="shop-item"></div>
+                <div class="shop-item"></div>
+                <div class="shop-item"></div>
+                <div class="shop-cart">Dabali+ · Commander</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-info">
+          <span class="project-status project-status--done">En ligne</span>
+          <h3 class="project-title">Dabali+</h3>
+          <p class="project-tagline">Plateforme de commande — Restaurant africain</p>
+          <div class="project-body">
+            <div class="project-block">
+              <h4>Contexte</h4>
+              <p>Site vitrine et plateforme de commande pour Dabali+, restaurant proposant des spécialités africaines authentiques à Abidjan.</p>
+            </div>
+            <div class="project-block">
+              <h4>Problème résolu</h4>
+              <p>Permettre aux clients de consulter le menu complet et de commander en ligne via une interface claire et responsive.</p>
+            </div>
+            <div class="project-block">
+              <h4>Mon rôle</h4>
+              <p>Conception UI, développement intégral HTML/CSS/JS et déploiement sur GitHub Pages.</p>
+            </div>
+          </div>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
+          </div>
+          <a href="https://marcceuh.github.io/Dabali-/" target="_blank" rel="noopener noreferrer" class="project-link">
+            Voir le site
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header fade-in">
+        <span class="section-label">03 — Compétences</span>
+        <h2 class="section-title">Outils &amp; langages<br>de mon arsenal.</h2>
+      </div>
+      <div class="skills-grid fade-in">
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span class="skill-icon skill-icon--code">{ }</span> Programmation</h3>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            <span>Node.js</span><span>PHP</span><span>Python</span>
+            <span>C</span><span>C++</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span class="skill-icon skill-icon--tools">⚙</span> Outils &amp; Technologies</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>VS Code</span>
+            <span>Dbeaver</span><span>Simulink</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span class="skill-icon skill-icon--chip">▣</span> Systèmes embarqués</h3>
+          <div class="skill-tags">
+            <span>Arduino</span><span>Capteurs IoT</span><span>ESP8266</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><span class="skill-icon skill-icon--lang">◉</span> Langues</h3>
+          <div class="skill-tags">
+            <span>Français — Courant</span><span>Anglais — A2</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-inner fade-in">
+        <span class="section-label">04 — Contact</span>
+        <h2 class="section-title">Travaillons<br>ensemble.</h2>
+        <p class="contact-text">
+          Disponible pour des stages, collaborations ou échanges autour
+          de projets tech en Côte d'Ivoire et au-delà.
+        </p>
+        <div class="contact-actions">
+          <a href="mailto:nguessanmarcabel@gmail.com" class="btn btn-primary">nguessanmarcabel@gmail.com</a>
+          <a href="tel:+2250787152817" class="btn btn-secondary">+225 07 87 15 28 17</a>
+        </div>
+        <div class="contact-links">
+          <a href="https://github.com/Marc-j11" target="_blank" rel="noopener noreferrer" class="contact-link">
+            GitHub
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+              <path d="M2 10L10 2M10 2H4M10 2V8" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 Marc Abel N'Guessan. Conçu avec rigueur.</p>
+      </div>
+    </footer>
+  </section>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
